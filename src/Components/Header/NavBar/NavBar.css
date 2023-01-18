@@ -1,0 +1,18 @@
+*{
+    list-style: none;
+}
+
+.nav-bar{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+}
+
+.categories-container{
+    display: flex;
+}
+
+.categorie{
+    padding: 10px;
+}
