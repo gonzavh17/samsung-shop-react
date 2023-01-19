@@ -13,6 +13,7 @@ function ItemList({ items }) {
             price={product.price}
             memory={product.memory}
             image={product.image}
+            id={product.id}
           />
         ))}
       </div>

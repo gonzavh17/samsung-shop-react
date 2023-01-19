@@ -7,7 +7,6 @@ function ItemListContainer({ saludo }) {
   const [data, setData] = useState([]);
   
   const { phoneCategory } = useParams();
-  console.log(phoneCategory);
 
   useEffect(() => {
     const getProducts = () => {
@@ -33,9 +32,7 @@ function ItemListContainer({ saludo }) {
 
   return (
     <div>
-      
       <ItemList items={data} />
-      
     </div>
   );
 }
