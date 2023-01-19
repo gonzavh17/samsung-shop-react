@@ -6,8 +6,8 @@ export const products = [
        "stock":"5",
        "category":"galaxyS",
        "memory":"256",
-       "image": "https://images.samsung.com/is/image/samsung/p6pim/levant/2202/gallery/levant-galaxy-s22-ultra-s908-413037-sm-s908ezkgmea-530970280"
-       
+       "image": "https://images.samsung.com/is/image/samsung/p6pim/levant/2202/gallery/levant-galaxy-s22-ultra-s908-413037-sm-s908ezkgmea-530970280",
+       "review" : ""
    },
    {
        "id":"2",
@@ -43,7 +43,8 @@ export const products = [
        "stock":"4",
        "category":"galaxyZ",
        "memory":"256",
-       "image": "https://www.mgmstore.com.ar/1356-large_default/Samsung-Galaxy-Z-Flip-4-5G-256GB.jpg"
+       "image": "https://www.mgmstore.com.ar/1356-large_default/Samsung-Galaxy-Z-Flip-4-5G-256GB.jpg",
+       "review": '"Los dispositivos plegables están a punto de ser MUCHO MÁS que dispositivos".'
    },
    {
        "id":"6",

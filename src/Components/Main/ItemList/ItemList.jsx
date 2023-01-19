@@ -14,6 +14,7 @@ function ItemList({ items }) {
             memory={product.memory}
             image={product.image}
             id={product.id}
+            review={product.review}
           />
         ))}
       </div>

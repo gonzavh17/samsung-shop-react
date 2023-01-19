@@ -1,13 +1,13 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import ItemDetail from "./ItemDetail";
 import { products } from "../../../Api/Products";
-import { useEffect } from "react";
 
 function ItemDetailContainer() {
-  const [data, setData] = useState({});
+  const [item, setItem] = useState({});
+  
   const { id } = useParams();
-  console.log(id);
+//   console.log(id);
 
   useEffect(() => {
     const getProduct = () => {
@@ -20,16 +20,18 @@ function ItemDetailContainer() {
     };
     getProduct()
       .then((res) => {
-        setData(res);
+        setItem(res);
       })
       .catch((error) => {
         console.log(error);
       });
   }, []);
 
+  console.log(item)
+  
   return (
     <div>
-      <ItemDetail data={data} />
+      <ItemDetail item={item} />
     </div>
   );
 }
