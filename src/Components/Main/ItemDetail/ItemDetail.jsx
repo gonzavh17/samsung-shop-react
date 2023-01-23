@@ -1,5 +1,6 @@
 import React from "react";
-import "./ItemDetail.css";
+import Contador from "../Contador/Contador";
+
 
 export const ItemDetail = ({ item }) => {
   return (
@@ -7,19 +8,33 @@ export const ItemDetail = ({ item }) => {
       <div className="information">
         <h3>{item.name}</h3>
         <img alt={`{Samsung ${item.name}}`} src={item.image} className="img" />
-        <p>{`U$D ${item.price}`}</p>
-        <p>{`${item.memory} GB`}</p>
+        <p>Price: {`U$D ${item.price}`}</p>
+        <p>Memory: {`${item.memory} GB`}</p>
       </div>
 
       <div className="information-container">
-        <div className="aditional-information">
-          <p>Reseñas de nuestros usuarios: {item.review}</p>
+        <div className="reviewes-container">
+          <div className="review-container">
+            <p className="review">{item.review1}</p>
+            <p className="reviewer">{item.reviewer1}</p>
+          </div>
+          <div className="review-container">
+            <p className="review">{item.review2}</p>
+            <p className="reviewer">{item.reviewer2}</p>
+          </div>
         </div>
 
-        <div className="cart">
-          <button>+</button>
-          <p>4</p>
-          <button>-</button>
+        <div className="container">
+          <Contador/>
+        </div>
+
+        <div className="aditional-information">
+          <p className="aditional-infomation-title">Informacion Adicional:</p>
+          <p>Ram: {item.ram}</p>
+          <p>Camara: {item.camara}</p>
+          <p>Batería: {item.bateria}</p>
+          <p>Sistema Operativo: {item.os}</p>
+          <p>Peso: {item.peso}</p>
         </div>
       </div>
     </div>

@@ -7,7 +7,16 @@ export const products = [
        "category":"galaxyS",
        "memory":"256",
        "image": "https://images.samsung.com/is/image/samsung/p6pim/levant/2202/gallery/levant-galaxy-s22-ultra-s908-413037-sm-s908ezkgmea-530970280",
-       "review" : ""
+       "review1": '"Las fotos en modo retrato más increíbles vi en un teléfono inteligente hasta ahora”.',
+       "reviewer1": 'The Verge',
+       "review2": '"El mejor de su clase, con una camara incomparable".',
+       "reviewer2": 'Digital Trends',
+       "ram": "12",
+       "camara": "Cuádruple, 108MP+10MP +10MP+12MP",
+       "bateria":"5000 mAh",
+       "os":"Android 12",
+       "peso":"228"
+
    },
    {
        "id":"2",
@@ -16,7 +25,12 @@ export const products = [
        "stock":"4",
        "category":"galaxyS",
        "memory":"256",
-       "image": "https://images.samsung.com/is/image/samsung/p6pim/es/2202/gallery/es-galaxy-s22-plus-s906-sm-s906bzkgeub-530863359?$650_519_PNG$"
+       "image": "https://images.samsung.com/is/image/samsung/p6pim/es/2202/gallery/es-galaxy-s22-plus-s906-sm-s906bzkgeub-530863359?$650_519_PNG$",
+       "review1": '"Tiene una pantalla increíble, rendimiento sólido y batería de larga duración".',
+       "reviewer1": 'Gizmodo',
+       "review2": '"Se siente como un dispositivo casi perfecto para quienes prefieren smartphones más pequeños”.',
+       "reviewer2": 'CNET'
+       
    },
    {
        "id":"3",
@@ -25,7 +39,11 @@ export const products = [
        "stock":"7",
        "category":"galaxyS",
        "memory":"128",
-       "image": "https://image-us.samsung.com/SamsungUS/home/mobile/phones/pdp/galaxy-s21-fe-5g/gallery/SM-G990U-graphite-1.png"
+       "image": "https://image-us.samsung.com/SamsungUS/home/mobile/phones/pdp/galaxy-s21-fe-5g/gallery/SM-G990U-graphite-1.png",
+       "review1": '"El mejor dentro de su categoria de calidad y precio".',
+       "reviewer1": 'Gizmodo',
+       "review2": '"Un precio bajo para la experiencia de usuario que ofrece".',
+       "reviewer2": 'CNET'
    },
    {
        "id":"4",
@@ -34,7 +52,11 @@ export const products = [
        "stock":"7",
        "category":"galaxyZ",
        "memory":"512",
-       "image": "https://tienda.personal.com.ar/images/Galaxy_Z_Fold4_GG_Back_Open_min_b34cf2f5df.png"
+       "image": "https://tienda.personal.com.ar/images/Galaxy_Z_Fold4_GG_Back_Open_min_b34cf2f5df.png",
+       "review1": '"El Z Fold4 sigue siendo inigualable en términos de productividad y multitareas".',
+       "reviewer1": 'Forbes',
+       "review2": '"Los dispositivos plegables están a punto de ser MUCHO MÁS que dispositivos".',
+       "reviewer2": 'TechRadar'
    },
    {
        "id":"5",
@@ -44,7 +66,10 @@ export const products = [
        "category":"galaxyZ",
        "memory":"256",
        "image": "https://www.mgmstore.com.ar/1356-large_default/Samsung-Galaxy-Z-Flip-4-5G-256GB.jpg",
-       "review": '"Los dispositivos plegables están a punto de ser MUCHO MÁS que dispositivos".'
+       "review1": '"Los dispositivos plegables están a punto de ser MUCHO MÁS que dispositivos".',
+       "reviewer1": 'TechRadar',
+       "review2": '"...el Galaxy Z Flip4 es el mejor de su clase".',
+       "reviewer2": 'Digital Trends'
    },
    {
        "id":"6",
@@ -53,7 +78,11 @@ export const products = [
        "stock":"2",
        "category":"galaxyZ",
        "memory":"256",
-       "image": "https://images.samsung.com/is/image/samsung/p6pim/ar/sm-f926bzkaaro/gallery/ar-galaxy-z-fold3-f926-5g-397281-sm-f926bzkaaro-thumb-496216258?imwidth=720"
+       "image": "https://images.samsung.com/is/image/samsung/p6pim/ar/sm-f926bzkaaro/gallery/ar-galaxy-z-fold3-f926-5g-397281-sm-f926bzkaaro-thumb-496216258?imwidth=720",
+       "review1": '"Los dispositivos plegables están a punto de ser MUCHO MÁS que dispositivos".',
+       "reviewer1": 'TechRadar',
+       "review2": '"...el Galaxy Z Flip4 es el mejor de su clase".',
+       "reviewer2": 'Digital Trends'
    },
    {
        "id":"7",
@@ -62,7 +91,11 @@ export const products = [
        "stock":"8",
        "category":"galaxyA",
        "memory":"128",
-       "image": "https://wikimovel.com/images/thumb/e/ed/Samsung-Galaxy-A52.png/300px-Samsung-Galaxy-A52.png"
+       "image": "https://wikimovel.com/images/thumb/e/ed/Samsung-Galaxy-A52.png/300px-Samsung-Galaxy-A52.png",
+       "review1": '"De los mejores dispositivos gama media en su año".',
+       "reviewer1": 'TechRadar',
+       "review2": '"Sin duda el mejor de su segmento".',
+       "reviewer2": 'Digital Trends'
    },
    {
        "id":"8",
@@ -71,7 +104,11 @@ export const products = [
        "stock":"7",
        "category":"galaxyA",
        "memory":"128",
-       "image": "https://images.samsung.com/is/image/samsung/p6pim/ar/2202/gallery/ar-galaxy-a53-5g-a536-sm-a536ezoaaro-531544702?$650_519_PNG$"
+       "image": "https://images.samsung.com/is/image/samsung/p6pim/ar/2202/gallery/ar-galaxy-a53-5g-a536-sm-a536ezoaaro-531544702?$650_519_PNG$",
+       "review1": '"Un diseño simple, creado para destacar".',
+       "reviewer1": 'Gizmodo',
+       "review2": '"Asombrosa pantalla AMOLED, para el segmento de precio en el que se encuentra".',
+       "reviewer2": 'Digital Trends'
    },
    {
        "id":"9",
@@ -80,7 +117,11 @@ export const products = [
        "stock":"4",
        "category":"galaxyA",
        "memory":"128",
-       "image": "https://images.samsung.com/is/image/samsung/p6pim/ar/sm-a725mzbaaro/gallery/ar-galaxy-a72-a725-377975-sm-a725mzbaaro-409830543?$650_519_PNG$"
+       "image": "https://images.samsung.com/is/image/samsung/p6pim/ar/sm-a725mzbaaro/gallery/ar-galaxy-a72-a725-377975-sm-a725mzbaaro-409830543?$650_519_PNG$",
+       "review1": '"Una asombrosa pantalla con un desplazamiento extrafluido".',
+       "reviewer1": 'Gizmodo',
+       "review2": '"Un dispositivo movil con una versatilidad unica en su segmento".',
+       "reviewer2": 'TechRadar'
    },
    {
        "id":"10",
@@ -89,7 +130,11 @@ export const products = [
        "stock":"3",
        "category":"galaxyA",
        "memory":"128",
-       "image": "https://storage.comprasmartphone.com/smartphones/samsung-galaxy-a52s-5g.png"
+       "image": "https://storage.comprasmartphone.com/smartphones/samsung-galaxy-a52s-5g.png",
+       "review1": '"Un dispositivo movil con una versatilidad unica en su segmento".',
+       "reviewer1": 'TechRadar',
+       "review2": '"Camara nitida y estable".',
+       "reviewer2": 'Gizmodo',
    },
    {
        "id":"",
