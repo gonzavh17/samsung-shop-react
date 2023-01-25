@@ -30,11 +30,12 @@ export const ItemDetail = ({ item }) => {
 
         <div className="aditional-information">
           <p className="aditional-infomation-title">Informacion Adicional:</p>
-          <p>Ram: {item.ram}</p>
+          <p>Procesador: {item.procesador}</p>
+          <p>Ram: {item.ram}GB</p>
           <p>Camara: {item.camara}</p>
           <p>Batería: {item.bateria}</p>
           <p>Sistema Operativo: {item.os}</p>
-          <p>Peso: {item.peso}</p>
+          <p>Peso: {item.peso}g</p>
         </div>
       </div>
     </div>

@@ -20,11 +20,11 @@ function App() {
         <Routes>
           <Route
             path="/"
-            element={<ItemListContainer saludo="Bienvenidos" />}
+            element={<ItemListContainer />}
           />
            <Route
             path="/home"
-            element={<Home saludo="Bienvenidos" />}
+            element={<Home/>}
           />
           <Route
             path="/categoria/:phoneCategory"

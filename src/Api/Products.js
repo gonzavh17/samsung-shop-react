@@ -11,6 +11,7 @@ export const products = [
        "reviewer1": 'The Verge',
        "review2": '"El mejor de su clase, con una camara incomparable".',
        "reviewer2": 'Digital Trends',
+       "procesador":"Octa-core(2.99GHz, 2.4GHz, 1.7GHz.)",
        "ram": "12",
        "camara": "Cuádruple, 108MP+10MP +10MP+12MP",
        "bateria":"5000 mAh",
@@ -29,7 +30,13 @@ export const products = [
        "review1": '"Tiene una pantalla increíble, rendimiento sólido y batería de larga duración".',
        "reviewer1": 'Gizmodo',
        "review2": '"Se siente como un dispositivo casi perfecto para quienes prefieren smartphones más pequeños”.',
-       "reviewer2": 'CNET'
+       "reviewer2": 'CNET',
+       "procesador":"Octa-core(2.99GHz, 2.4GHz, 1.7GHz.)",
+       "ram": "8",
+       "camara": "50.0 MP + 10.0 MP + 12.0 MP",
+       "bateria":"5000 mAh",
+       "os":"Android 12",
+       "peso":"167"
        
    },
    {
@@ -43,7 +50,13 @@ export const products = [
        "review1": '"El mejor dentro de su categoria de calidad y precio".',
        "reviewer1": 'Gizmodo',
        "review2": '"Un precio bajo para la experiencia de usuario que ofrece".',
-       "reviewer2": 'CNET'
+       "reviewer2": 'CNET',
+       "procesador":"Snapdragon 888",
+       "ram": "6",
+       "camara": "Triple, 12 MP + 12 MP + 8 MP.",
+       "bateria":"4.500 mAh",
+       "os":"Android 12",
+       "peso":"177"
    },
    {
        "id":"4",
@@ -56,7 +69,13 @@ export const products = [
        "review1": '"El Z Fold4 sigue siendo inigualable en términos de productividad y multitareas".',
        "reviewer1": 'Forbes',
        "review2": '"Los dispositivos plegables están a punto de ser MUCHO MÁS que dispositivos".',
-       "reviewer2": 'TechRadar'
+       "reviewer2": 'TechRadar',
+       "procesador": "Qualcomm Snapdragon 8+ Gen 1",
+       "ram": "12",
+       "camara": "Triple, 50 MP + 12 MP + 10 MP.",
+       "bateria":"4.400 mAh",
+       "os":"Android 12",
+       "peso":"239 "
    },
    {
        "id":"5",
@@ -69,7 +88,13 @@ export const products = [
        "review1": '"Los dispositivos plegables están a punto de ser MUCHO MÁS que dispositivos".',
        "reviewer1": 'TechRadar',
        "review2": '"...el Galaxy Z Flip4 es el mejor de su clase".',
-       "reviewer2": 'Digital Trends'
+       "reviewer2": 'Digital Trends',
+       "procesador":"Snapdragon 8+ Gen 1.",
+       "ram": "12",
+       "camara": "Principal: sensor de 12 megapíxeles con fotodiodos de 1,8 μm. Ultragran angular: sensor de 12 megapíxeles con fotodiodos de 1,12 μm",
+       "bateria":"3700 mAh",
+       "os":"Android 12",
+       "peso":"187"
    },
    {
        "id":"6",
@@ -82,7 +107,13 @@ export const products = [
        "review1": '"Los dispositivos plegables están a punto de ser MUCHO MÁS que dispositivos".',
        "reviewer1": 'TechRadar',
        "review2": '"...el Galaxy Z Flip4 es el mejor de su clase".',
-       "reviewer2": 'Digital Trends'
+       "reviewer2": 'Digital Trends',
+       "procesador":"Octa-core(2.84GHz, 2.4GHz, 1.8GHz.)",
+       "ram": "12",
+       "camara": "Triple, 12MP + 12MP +12 MP",
+       "bateria":"3700 mAh",
+       "os":"Android 12",
+       "peso":"271"
    },
    {
        "id":"7",
@@ -95,7 +126,13 @@ export const products = [
        "review1": '"De los mejores dispositivos gama media en su año".',
        "reviewer1": 'TechRadar',
        "review2": '"Sin duda el mejor de su segmento".',
-       "reviewer2": 'Digital Trends'
+       "reviewer2": 'Digital Trends',
+       "procesador": "Qualcomm SM7125 Octa Core (2 x 2.3GHz + 6 x 1.8GHz)",
+       "ram": "6",
+       "camara": "Cuadruple, 64MP + 12MP + 5MP + 5MP",
+       "bateria":"4900 mAh",
+       "os":"Android 11",
+       "peso":"189"
    },
    {
        "id":"8",
@@ -108,7 +145,13 @@ export const products = [
        "review1": '"Un diseño simple, creado para destacar".',
        "reviewer1": 'Gizmodo',
        "review2": '"Asombrosa pantalla AMOLED, para el segmento de precio en el que se encuentra".',
-       "reviewer2": 'Digital Trends'
+       "reviewer2": 'Digital Trends',
+       "procesador": "Octa Core 2.4GHz,2GHz",
+       "ram": "6",
+       "camara": "Cuadruple, 64MP + 12MP + 5MP + 5MP",
+       "bateria":"5000 mAh",
+       "os":"Android 11",
+       "peso":"189"
    },
    {
        "id":"9",
@@ -121,7 +164,13 @@ export const products = [
        "review1": '"Una asombrosa pantalla con un desplazamiento extrafluido".',
        "reviewer1": 'Gizmodo',
        "review2": '"Un dispositivo movil con una versatilidad unica en su segmento".',
-       "reviewer2": 'TechRadar'
+       "reviewer2": 'TechRadar',
+       "procesador": "Octa-Core (2 x 2,3 GHz + 6 x 1,8 GHz)",
+       "ram": "8",
+       "camara": "Cuadruple, 64MP + 12MP + 5MP + 8MP",
+       "bateria":"5000 mAh",
+       "os":"Android 11",
+       "peso":"198"
    },
    {
        "id":"10",
@@ -135,6 +184,12 @@ export const products = [
        "reviewer1": 'TechRadar',
        "review2": '"Camara nitida y estable".',
        "reviewer2": 'Gizmodo',
+       "procesador": "Snapdragon 750G 5G",
+       "ram": "6",
+       "camara": "Cuadruple, 64MP + 12MP + 5MP + 8MP",
+       "bateria":"5000 mAh",
+       "os":"Android 11",
+       "peso":"198"
    },
    {
        "id":"",
