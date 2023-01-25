@@ -1,5 +1,11 @@
 *{
     list-style: none;
+    text-decoration: none;
+    color: #000;
+}
+
+.active{
+    /* color:#fff; */
 }
 
 .nav-bar{
@@ -7,6 +13,7 @@
     justify-content: space-between;
     padding: 20px;
     align-items: center;
+    border-bottom: 1px solid #000;
 }
 
 .categories-container{
