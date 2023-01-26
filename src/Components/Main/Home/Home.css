@@ -1,0 +1,153 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+.section1{
+    height: 100vh;
+}
+
+.title{
+    display: flex;
+    align-items: center;
+    font-size: 60px;
+    margin-left: 50px;
+    margin-top: 30px;
+}
+
+.title2{
+    margin-left: 50px;
+    
+}
+
+.title3{
+    margin-left: 50px;
+    margin-top: 40px;
+}
+
+.img-container{
+    display: flex;
+    align-items: center;
+}
+
+.img-1{
+    width: 500px;
+    height: 550px;
+    margin: 10px 10px 10px 70px;
+}
+
+.img-2{
+    width: 700px;
+    height: 400px;
+    margin: 10px;
+}
+
+.img-3{
+    width: 500px;
+    height: 550px;
+    margin: 10px;
+}
+
+.cellphone-title-1{
+    font-size: 50px;
+    margin-left: 70px;
+}
+
+.cellphone-title-2{
+    font-size: 50px;
+    margin-right: 70px;
+}
+
+.cellphone{
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    margin: 15px;
+}
+
+.cellphone-description{
+    font-size: 20px;
+    width: 300px;
+    margin-left:   70px;
+}
+
+
+.cellphone-description-2{
+    font-size: 20px;
+    width: 300px;
+    margin-right:   70px;
+}
+
+.cellphone-description-container{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    
+}
+
+
+
+
+.section-2{
+    background-image: url(https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/samsung-galaxy-s22-1644416200.jpg);
+    height: 100vh;
+    background-size:cover;
+    
+}
+
+/* Conocer mas animacion */
+
+.conocer-mas-container{
+    display: flex;
+    justify-content: center;
+    margin-bottom:30px ;
+}
+
+.conocer-mas-btn{
+    
+    justify-content: center;
+    font-size: 20px;
+    padding: 10px;
+    margin:0 15px 0 15px;
+    display: inline-block;
+    position: relative;
+}
+
+.conocer-mas-btn::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 4px;
+    bottom: 0;
+    left: 0;
+    background-color: #D1D1D1;
+    transform-origin: bottom right;
+    transition: transform 0.6s ease-out;
+}
+
+.conocer-mas-btn:hover:after{
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.section-3{
+    height: 100vh;
+}
+
+.comprar-btn-container{
+    display: flex;
+    justify-content: center;
+}
+
+.comprar-btn{
+    border: none;
+    background-color: #000;
+    color: #D1D1D1;
+    padding: 15px;
+    border-radius: 20px;
+    cursor: pointer;
+}

@@ -4,7 +4,7 @@ import "./Item.css";
 
 export const Item = (Products) => {
   return (
-    <div>
+    <div data-aos="zoom-in">
       <Link className="ver-mas" to={`/products/${Products.id}`}>
         <div className="card-container">
           <h3>{Products.name}</h3>
