@@ -17,7 +17,6 @@ export const products = [
        "bateria":"5000 mAh",
        "os":"Android 12",
        "peso":"228"
-
    },
    {
        "id":"2",

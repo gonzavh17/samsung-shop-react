@@ -11,23 +11,29 @@ import {
 } from "react-router-dom";
 import Home from "./Components/Main/Home/Home";
 import Footer from "./Components/Footer/Footer";
+import Cart from "./Components/Main/Cart/Cart";
+import CartProvider from "./Context/Context/CustomProvider";
+
 
 function App() {
   return (
     <div>
-      <BrowserRouter>
-        <NavBar />
-        <Routes>
-          <Route path="/" element={<ItemListContainer />} />
-          <Route path="/home" element={<Home />} />
-          <Route
-            path="/categoria/:phoneCategory"
-            element={<ItemListContainer saludo="ASASD" />}
-          />
-          <Route path="/products/:id" element={<ItemDetailContainer />} />
-        </Routes>
-        <Footer />
-      </BrowserRouter>
+      <CartProvider>
+        <BrowserRouter>
+          <NavBar />
+          <Routes>
+            <Route path="/" element={<ItemListContainer />} />
+            <Route path="/home" element={<Home />} />
+            <Route
+              path="/categoria/:phoneCategory"
+              element={<ItemListContainer saludo="ASASD" />}
+            />
+            <Route path="/products/:id" element={<ItemDetailContainer />} />
+            <Route path="/Cart" element={<Cart />} />
+          </Routes>
+          <Footer />
+        </BrowserRouter>
+      </CartProvider>
     </div>
   );
 }

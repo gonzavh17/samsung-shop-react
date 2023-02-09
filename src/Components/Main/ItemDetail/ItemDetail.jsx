@@ -1,8 +1,27 @@
-import React from "react";
+import { React, useContext, useState } from "react";
+import { CartContext, useCartContext } from "../../../Context/Context/CustomProvider";
 import Contador from "../Contador/Contador";
 
+export const ItemDetail = ({ item })   => {
+  const [confirmado, setConfirmado] = useState(false);
+  const {addProduct} = useContext(CartContext)
+  const [cantidadLocal, setCantidadLocal] = useState(1)
 
-export const ItemDetail = ({ item }) => {
+
+ const handleAdd = (cantidad) =>{
+    
+    setCantidadLocal(cantidad)
+    setConfirmado(true)
+    console.log(cantidad)
+   
+ }
+
+ const handleClick = () => {
+  addProduct(item, cantidadLocal)
+ console.log(cantidadLocal)
+ }
+
+
   return (
     <div className="container-detail">
       <div className="information">
@@ -25,7 +44,9 @@ export const ItemDetail = ({ item }) => {
         </div>
 
         <div className="container">
-          <Contador/>
+          <Contador handleAdd={handleAdd}/>
+          {confirmado && <button onClick={handleClick}>Confirmar</button>}
+          
         </div>
 
         <div className="aditional-information">

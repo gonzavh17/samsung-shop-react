@@ -1,7 +1,7 @@
 import {React, useState} from 'react'
 import "../ItemDetail/ItemDetail.css";
 
-function Contador() {
+function Contador({handleAdd}) {
     const [cantidad, setCantidad] = useState(1);
     
     const sumar = () => {
@@ -15,14 +15,19 @@ function Contador() {
         }
     }
 
+    const handleConfirmar = () => {
+        handleAdd(cantidad)
+    }
+
     return (
     <div className='contador-container'>
         <div className="contador">
             <button onClick={restar} className='contador-button'>-</button>
             <p className='cantidad'>{cantidad}</p>
             <button onClick={sumar} className='contador-button'>+</button>
+            <button onClick={handleConfirmar}>Agregar al carrito</button>
         </div>
-        <button className='add-to-cart'>Agregar al carrito</button>
+        
     </div>
   )
 }

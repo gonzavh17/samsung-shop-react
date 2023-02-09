@@ -1,6 +1,7 @@
 import React from "react";
 import "./Home.css";
 import { Link } from "react-router-dom";
+import Btn from "../../Btn/Btn";
 
 function Home() {
   return (
@@ -89,11 +90,11 @@ function Home() {
             texto legible.
           </p>
         </div>
-        <div className="comprar-btn-container">
+       
           <Link to="/products/1">
-            <button className="comprar-btn"  data-aos="fade-down">Comprar</button>
+            <Btn/>
           </Link>
-        </div>
+        
       </section>
     </div>
   );

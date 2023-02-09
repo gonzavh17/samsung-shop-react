@@ -27,7 +27,6 @@ function ItemDetailContainer() {
       });
   }, []);
 
-  console.log(item)
   
   return (
     <div>

@@ -1,0 +1,13 @@
+.footer-container{
+    display: flex;
+    justify-content: space-around;
+    margin: 40px 90px;
+    /* background-color: #D1D1D1; */
+}
+
+.footer-title{
+    border-left:1px solid #000 ;
+    padding: 0 15px;
+    
+    
+}
