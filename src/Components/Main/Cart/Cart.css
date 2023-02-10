@@ -1,0 +1,9 @@
+.carrito-container{
+   display: flex;
+   justify-content: space-around;
+}
+
+.cart-img{
+    width: 300px;
+    height: 250px;
+}

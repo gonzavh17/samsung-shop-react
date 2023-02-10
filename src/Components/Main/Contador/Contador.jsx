@@ -1,4 +1,5 @@
 import {React, useState} from 'react'
+import Cart from '../Cart/Cart';
 import "../ItemDetail/ItemDetail.css";
 
 function Contador({handleAdd}) {

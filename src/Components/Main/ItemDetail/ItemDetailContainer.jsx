@@ -1,31 +1,35 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import ItemDetail from "./ItemDetail";
-import { products } from "../../../Api/Products";
+import { productsCollection } from "../../../firebase-config";
+import { getDoc, doc } from "firebase/firestore";
 
 function ItemDetailContainer() {
   const [item, setItem] = useState({});
   
   const { id } = useParams();
-//   console.log(id);
 
   useEffect(() => {
+    
     const getProduct = () => {
-      return new Promise((res, rej) => {
-        const filtredProducts = products.find((prod) => prod.id === id);
-        setTimeout(() => {
-          res(filtredProducts);
-        }, 500);
-      });
-    };
-    getProduct()
-      .then((res) => {
-        setItem(res);
+      
+      const docReference = doc(productsCollection, id )
+
+      const pedido = getDoc(docReference)
+
+      pedido
+      .then((resultado) => {
+        const producto = resultado.data()
+        setItem(producto)
+        // setCargando
       })
       .catch((error) => {
-        console.log(error);
-      });
-  }, []);
+        console.log(error)
+      })
+
+    }
+    getProduct()
+  }, [id]);
 
   
   return (
@@ -36,3 +40,5 @@ function ItemDetailContainer() {
 }
 
 export default ItemDetailContainer;
+
+

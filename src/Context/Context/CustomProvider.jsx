@@ -19,14 +19,12 @@ const CartProvider = ({ children }) => {
     setCart([item])
     setCantidad(cantidad)
 
-    // const newCart = cart.filter(prod => prod.id !== item.id)
-    // newCart.push({...item, cantidad: cantidad});
-    // setCart(newCart)
+    const newCart = cart.filter(prod => prod.id !== item.id)
+    newCart.push({...item});
+    setCart(newCart)
 
-
-    // const {cantidad = []} = cart.find(prod => prod.id === item.id) || {};
-    // const newCart = cart.filter(prod => prod.id !== item.id);
-    // setCart([...newCart, {...item, cantidad: cantidad + newQuantity}])
+    setTotal(item.price * cantidad)
+    
     
     
   }
@@ -41,14 +39,15 @@ const CartProvider = ({ children }) => {
 
 
   const contextValue = {
+    total,
     clearCart,
     isInCart,
     removeProduct,
     addProduct,
-    cantidad
+    cantidad,
+    cart
   };
 
-  console.log('carrito', cart)
 
   return (
     // <contexto.Provider value={{state: state, addProduct}}>
