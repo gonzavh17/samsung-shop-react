@@ -1,10 +1,6 @@
 import React, {createContext, useState, useContext } from "react";
-import { products } from "../../Api/Products";
 
 export const CartContext = React.createContext([]);
-
-
-
 
 const CartProvider = ({ children }) => {
 
@@ -19,17 +15,13 @@ const CartProvider = ({ children }) => {
     setCart([item])
     setCantidad(cantidad)
 
-    const newCart = cart.filter(prod => prod.id !== item.id)
+    const newCart = cart.filter(item => item.id !== item.id)
     newCart.push({...item});
     setCart(newCart)
 
     setTotal(item.price * cantidad)
     
-    
-    
   }
-
-  
 
   const clearCart = () => setCart([])
 
@@ -47,12 +39,7 @@ const CartProvider = ({ children }) => {
     cantidad,
     cart
   };
-
-
   return (
-    // <contexto.Provider value={{state: state, addProduct}}>
-    //     {props.children}
-    // </contexto.Provider>
     <CartContext.Provider value={contextValue}>
         {children}
     </CartContext.Provider>

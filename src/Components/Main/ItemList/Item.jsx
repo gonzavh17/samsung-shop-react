@@ -24,6 +24,4 @@ export const Item = (Products) => {
 };
 
 export default Item;
-{
-  /* <button className="more-info-btn">More Info</button> */
-}
+

@@ -6,13 +6,29 @@ import "./Cart.css"
 
 function Cart({ item }) {
   const { addProduct, cart, cantidad, clearCart,total } = useContext(CartContext);
+  
   const clear = () => {
     clearCart()
     window.location.reload(true)
   }
 
-//  const [cartStatus, setCartStatus] = useState[false]
+  const handleCompra = () => {
 
+  }
+
+   const compra = [{
+    usuario : {
+      nombre:"Gonzalo",
+      email:"asdad@gmail.com",
+      numero: "+54 555 777"
+    },
+    cart:cart,
+    fecha: serverTimestamp()
+   }]
+
+   const test = () => {
+      console.log(compra)
+   }
 
   return (
     <div>
@@ -31,6 +47,7 @@ function Cart({ item }) {
       </div>
         <p>Total: {total} U$D</p>
       <button onClick={clear}>Limpiar</button>
+      <button onClick={test}>Finalizar compra</button>
     </div>
   );
 }
