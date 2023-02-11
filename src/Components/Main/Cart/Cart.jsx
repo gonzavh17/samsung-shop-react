@@ -13,22 +13,28 @@ function Cart({ item }) {
   }
 
   const handleCompra = () => {
+    const compra = {
+      usuario : {
+        nombre:"Gonzalo",
+        email:"asdad@gmail.com",
+        numero: "+54 555 777"
+      },
+      cart:cart,
+      fecha: serverTimestamp()
+     }
 
+     
+      const pedido = addDoc(ventasCollection, compra)
+
+      pedido
+      .then((res) => {
+        console.log(res.id)
+        console.log(res)
+      })
+      .catch((error) => {
+        console.log(error)
+      })
   }
-
-   const compra = [{
-    usuario : {
-      nombre:"Gonzalo",
-      email:"asdad@gmail.com",
-      numero: "+54 555 777"
-    },
-    cart:cart,
-    fecha: serverTimestamp()
-   }]
-
-   const test = () => {
-      console.log(compra)
-   }
 
   return (
     <div>
@@ -47,7 +53,7 @@ function Cart({ item }) {
       </div>
         <p>Total: {total} U$D</p>
       <button onClick={clear}>Limpiar</button>
-      <button onClick={test}>Finalizar compra</button>
+      <button onClick={handleCompra}>Finalizar compra</button>
     </div>
   );
 }
