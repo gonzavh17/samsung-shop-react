@@ -21,7 +21,6 @@ function ItemDetailContainer() {
       .then((resultado) => {
         const producto = resultado.data()
         setItem(producto)
-        // setCargando
       })
       .catch((error) => {
         console.log(error)
@@ -34,11 +33,10 @@ function ItemDetailContainer() {
   
   return (
     <div>
-      <ItemDetail item={item} />
+      <ItemDetail item={item}/>
     </div>
   );
 }
 
 export default ItemDetailContainer;
-
 

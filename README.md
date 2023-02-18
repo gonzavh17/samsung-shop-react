@@ -1,70 +1,39 @@
-# Getting Started with Create React App
+## ¡Bienvenidos a Samsung Shop!
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+* Samsung Shop es una tienda tipo e commerce dedicada la venta de Smartphones especialmente modelos de Samsung(Galaxy S, Z, A)
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## Tabla de contenidos:
 
-### `npm start`
+- [Herramientas utilizadas](#herramientas-utilizadas)
+- [Guía de uso](#guia-de-uso)
+- [Aclaración importante](#aclaracion-importante)
+- [Futuros updates](#futuros-updates)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
+## Herramientas utilizadas :
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- "react": "^18.2.0": Framework utilizado para la maquetacion de la web
+- "@fortawesome/react-fontawesome": "^0.2.0": Utilizado para traer iconos
+- "@fortawesome/free-solid-svg-icons": "^6.2.1": Utilizado para el icono del cartWidget
+- "react-router-dom": "^6.7.0": Utilizado para crear las rutas de la web
+- "firebase": "^9.17.1": Utilizado para almacenar los productos y la informacion de venta del usuario
+- "aos": "^2.3.4": Libreria de smooth scroll para agregar animaciones al scrollear en la web
 
-### `npm test`
+---
+## Guia de Uso:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+* Samsung Shop funciona igual que cualquier e commerce, consta de un menu Home en el cual se presentan las novedades de la marca, y tres secciones dividas por categorias de los smartphones. Si algunos de estos es de tu agrado, pueden ser agregados al carrito con las unidades que sean deseadas, y de ahi se procesa la compra.
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Aclaracion importante
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+* Aclaracion para la correccion, el carrito no funciona correctamente ya que no se puede agregar mas de un producto, se pueden agregar varias cantidades del mismo pero no mas de uno, en un principio esto me funciono pero despues se termino rompiendo y probe con muchas cosas y no supe arreglarlo. Porfavor, si encontras el error aclaramelo porque intente de muchas formas y no pude solucionarlo. Gracias!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
+## Futuros updates:
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Formulario de comprar, en el cual se ingresa dentro de varios campos, nombre, email, numero, etc. Para luego ser procesado y enviado a firebase
+- Sweetalert para las cargas del itemList e itemDetail

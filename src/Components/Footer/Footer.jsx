@@ -1,5 +1,6 @@
 import React from 'react'
 import "./Footer.css"
+import { Link } from 'react-router-dom'
 
 function Footer() {
   return (
@@ -15,9 +16,17 @@ function Footer() {
       </div>
       <div className='footer-title'>
         <h4>Categorias</h4>
-        <p>Galaxy S</p>
-        <p>Galaxy Z</p>
-        <p>Galaxy A</p>
+        <div className="categorie-title-container">
+          <Link to="/categoria/galaxyS">
+          <a className='categorie-title'>Galaxy S</a>
+          </Link>
+          <Link to="/categoria/galaxyA">
+          <a className='categorie-title'>Galaxy A</a>
+          </Link>
+          <Link to="/categoria/galaxyZ">
+          <a className='categorie-title'>Galaxy Z</a>
+          </Link>
+        </div> 
       </div>
     </div>
   )

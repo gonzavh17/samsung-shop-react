@@ -5,13 +5,8 @@ import { CartContext } from '../../../Context/Context/CustomProvider'
 
 
 function CartWidget() {
-
   const { cantidad } = useContext(CartContext)
-
   return (
-
-    
-
     <div>
       <FontAwesomeIcon icon={faCartShopping}/>
       <span>{cantidad}</span>

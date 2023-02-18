@@ -4,9 +4,8 @@ import {
 } from "../../../Context/Context/CustomProvider";
 import Contador from "../Contador/Contador";
 import { Link } from "react-router-dom";
-import Cart from "../Cart/Cart";
 
-export const ItemDetail = ({ item }) => {
+  export const ItemDetail = ({ item }) => {
   const [confirmado, setConfirmado] = useState(false);
   const { addProduct,cart } = useContext(CartContext);
   const [cantidadLocal, setCantidadLocal] = useState(1);
@@ -18,7 +17,6 @@ export const ItemDetail = ({ item }) => {
 
   const handleClick = () => {
     addProduct(item, cantidadLocal);
-    console.log(cantidadLocal)
   };
 
   return (

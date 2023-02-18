@@ -11,9 +11,6 @@ function Home() {
           <h1 className="title" data-aos="fade-right">
             Bienvenido a Samsung Shop
           </h1>
-          {/* <h2 className="title2" data-aos="fade-right">
-            Distribuidora oficial de productos Samsung
-          </h2> */}
         </div>
         <div>
           <h3 className="cellphone" data-aos="fade-up">

@@ -11,3 +11,12 @@
     
     
 }
+
+.categorie-title-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.categorie-title{
+    padding: 0 15px;
+}
